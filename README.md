@@ -1,4 +1,5 @@
 # LockDown Tracker
+![Development Workflow](https://github.com/tiarebalbi/lockdown-map/workflows/Development%20Workflow/badge.svg)
 
 <img src="resources/screens/App%20Icon.png" width="120">
 
