@@ -10,6 +10,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+      dir: LockDownTracker
 
     strategy:
       matrix:
@@ -22,15 +24,15 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-      working-directory: LockDownTracker
+      working-directory: ${{ env.dir }}
       env:
         CI: true
     - run: npm test
-      working-directory: LockDownTracker
+      working-directory: ${{ env.dir }}
       env:
         CI: true
     - run: npm run lint
-      working-directory: LockDownTracker
+      working-directory: ${{ env.dir }}
       env:
         CI: true
 
